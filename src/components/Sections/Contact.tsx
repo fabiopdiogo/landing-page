@@ -39,7 +39,7 @@ const A = styled.a`
 
 const H1 = styled.h1`
   font-size: 85px;  
-  color: orange;
+  color: white;
 
   @media (max-width: 676px) {
     font-size: 45px;  

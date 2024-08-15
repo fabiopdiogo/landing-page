@@ -7,12 +7,13 @@ import Cards from '../Elements/Cards';
 const DivMain = styled.section`
   display: flex;
   flex-direction: column;
-  background-image: url('/glaubera.jpg');
+  background-image: url('/glauber2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width:100%;
   height: 100vh;
-  padding: 20px;
+  //padding: 20px;
   justify-content: center;
   align-items: center;
 
@@ -30,13 +31,14 @@ const DivMain = styled.section`
   @media (max-width: 480px) {
     background-size: cover;
     height: 50vh;
-    padding: 10px;
+    //padding: 10px;
+    width:100%;
   }
 `
 
 const H1 = styled.h1`
   font-size: 85px;
-  color: #0051ff;
+  color: white;
   font-family: 'Lato', sans-serif;
   text-align: center;
 

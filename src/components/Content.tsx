@@ -11,7 +11,7 @@ const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: black;  
-  padding: 0px 45px;
+  //padding: 0px 45px;
   gap: 20px;    
   
   &:before, &:after{
