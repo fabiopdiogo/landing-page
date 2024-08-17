@@ -83,9 +83,8 @@ function Menu({menuIsVisible,setMenuIsVisible} ){
       <DivMain>
         <ButtonsDiv>          
               <A href="#beginning" onClick={() => setMenuIsVisible(false)}>Inicio</A>
-              <Shortcut href="#about" setMenuIsVisible={setMenuIsVisible}>Sobre</Shortcut>
-              <Shortcut href="#skills" setMenuIsVisible={setMenuIsVisible}>Minhas Skills</Shortcut>
-              <Shortcut href="#projects" setMenuIsVisible={setMenuIsVisible}>Projetos</Shortcut>
+              <Shortcut href="#about" setMenuIsVisible={setMenuIsVisible}>Sobre Mim</Shortcut>
+              <Shortcut href="#projects" setMenuIsVisible={setMenuIsVisible}>Trabalhos</Shortcut>           
               <Shortcut href="#contact"setMenuIsVisible={setMenuIsVisible}>Contato</Shortcut>
         </ButtonsDiv>
       </DivMain>

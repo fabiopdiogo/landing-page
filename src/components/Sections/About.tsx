@@ -1,74 +1,88 @@
 import React from 'react';
-
 import styled from 'styled-components';
 
-import Cards from '../Elements/Cards';
-
 const H1 = styled.h1`
-  font-size:85px;
+  font-size: 85px;
   color: white;
-  @media (max-width: 676px){
-    font-size:45px;
+  text-align: center;
+
+  @media (max-width: 676px) {
+    font-size: 45px;
   }
-`
+  
+  @media (max-width: 480px) {
+    font-size: 25px;
+  }
+`;
+
 const DivMain = styled.section`
   display: flex;
   flex-direction: column;
-  background-image: url('/glauber3.jpg');
+  background-image: url('/glauber3.jpg'); /* Adicione a imagem de fundo */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width:100%;
-  height: 100vh;
+  background-attachment: fixed; /* Fixa o fundo na posição */
+  
+  min-height: 100vh; /* Garante que o contêiner ocupe pelo menos a altura total da tela */
   padding: 20px;
   justify-content: center;
   align-items: center;
+`;
 
-  @media (max-width: 1024px) {
-    background-size: contain; /* Ajusta a imagem para caber na área disponível */
-    height: 80vh;
-  }
+const Content = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
 
   @media (max-width: 768px) {
-    background-size: cover;
-    height: 60vh;
     padding: 15px;
   }
 
   @media (max-width: 480px) {
-    background-size: cover;
-    height: 50vh;
     padding: 10px;
-    width:100%;
   }
-`
-const Content = styled.section`
-  display: flex;
-  flex-direction: column;
-`
-const P = styled.p`
-  display: flex;
-  color: white;
-`
+`;
 
-interface Props{
-  id: string
+const P = styled.p`
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+`;
+
+interface Props {
+  id: string;
 }
 
-function About ({id}: Props){
-  return( 
-      <a id={id}>
+function About({ id }: Props) {
+  return (
+    <a id={id}>
       <DivMain>
-        <H1> Sobre mim </H1>        
-        
+        <H1>Sobre mim</H1>
         <Content>
-          <P> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culp
- 
-          </P>         
-        </Content> 
-      </DivMain>   
-      </a>
-  )
+          <P>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </P>
+        </Content>
+      </DivMain>
+    </a>
+  );
 }
 
 export default About;

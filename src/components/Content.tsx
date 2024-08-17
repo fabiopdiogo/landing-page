@@ -4,8 +4,10 @@ import styled from 'styled-components'
 
 import Projects from './Sections/Projects';
 import About from './Sections/About';
-import Contact from './Sections/Contact'
+import Whatasapp from './Sections/Whatsapp'
 import Inicio from './Sections/Inicio';
+import Contato from './Sections/Contato'
+import Redes from './Sections/Redes';
 
 const PostContainer = styled.div`
   display: flex;
@@ -38,7 +40,8 @@ function Content (){
       <Inicio id="beginning" />
       <About id="about"/>
       <Projects id="projects" />     
-      <Contact id="contact"/>      
+      <Whatasapp id="contact"/>     
+      <Redes id= "redes"/> 
     </PostContainer>
   )
 }

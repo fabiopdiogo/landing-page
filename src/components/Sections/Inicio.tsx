@@ -2,8 +2,6 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import Cards from '../Elements/Cards';
-
 const DivMain = styled.section`
   display: flex;
   flex-direction: column;
@@ -11,9 +9,8 @@ const DivMain = styled.section`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width:100%;
+  //width:100%;
   height: 100vh;
-  //padding: 20px;
   justify-content: center;
   align-items: center;
 
@@ -32,7 +29,6 @@ const DivMain = styled.section`
     background-size: cover;
     height: 50vh;
     //padding: 10px;
-    width:100%;
   }
 `
 
@@ -51,7 +47,7 @@ const H1 = styled.h1`
   }
 
   @media (max-width: 480px) {
-    font-size: 35px;
+    font-size: 25px;
   }
 `
 

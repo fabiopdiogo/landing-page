@@ -12,7 +12,6 @@ const Box = styled.div`
   flex-direction: column;    
   background-color: black;
   height: 100vh;
-  width: 100%; 
 `
 
 function App() { 

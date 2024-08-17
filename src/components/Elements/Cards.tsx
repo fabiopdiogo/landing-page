@@ -4,16 +4,11 @@ import styled from 'styled-components';
 
 
 const Div1 = styled.section`
-  background-color: orange;  
-  &:hover{
-    transform: translateY(-5px);   
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-  }
+
 `
 
 const Image = styled.img`  
-  width: 100%;
+  width: 50%;
   @media(max-width:1100px){
     object-fit: cover;
   } 
@@ -34,7 +29,6 @@ function Card({src}: Props){
   return(
     <Div1>
       <Image src={src}/>
-      <Text>foto de tatuagem</Text>
     </Div1>
   )
 }
