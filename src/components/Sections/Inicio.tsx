@@ -62,7 +62,7 @@ const DivMenu = styled.nav`
   align-items: center;
   justify-content: space-between; /* Ajusta o espaço entre o logo e os botões */
   padding: 10px 20px; /* Ajusta o padding da barra */
-  background-image: url('/fundo.jpg');
+
   background-size: cover;
   z-index: 1000;
 
@@ -76,7 +76,7 @@ const LogoH1 = styled(H1)`
   margin: 0;
   text-align: left; /* Alinha o logo à esquerda */
   color: white;
-
+  font-family: "Old English Text MT";
   @media (max-width: 1024px) {
     font-size: 30px;
   }

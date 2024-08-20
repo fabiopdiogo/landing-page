@@ -11,7 +11,8 @@ import Shortcut from './Elements/Shortcut';
 const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: black;  
+  background-color: black; 
+  width: 100%;
   //padding: 0px 45px;
   
   &:before, &:after{
