@@ -1,7 +1,16 @@
+@font-face {
+  font-family: 'Old English Text MT';
+  src: url('./fonts/oldenglishtextmt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  font-family: 'Old English Text MT', serif;
 }
 
 code {
