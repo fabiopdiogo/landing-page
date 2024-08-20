@@ -8,8 +8,8 @@ const DivMain = styled.main`
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  margin-top: 30px;
-
+  margin: 10px;
+  background-color: black;
   @media(max-width:1100px){
     display: none;
   }
@@ -49,10 +49,10 @@ function Column ({setMenuIsVisible}){
 
   return(   
     <>
-      <Open src="menu-squared-50.png" onClick={() => setMenuIsVisible(true)}/>
+      <Open src="menu.png" onClick={() => setMenuIsVisible(true)}/>
       <DivMain>
           <ButtonsDiv>
-                <Shortcut href="#beginning">Inicio</Shortcut>          
+                <Shortcut href="#beginning" >Inicio</Shortcut>          
                 <Shortcut href="#about">Sobre</Shortcut>
                 <Shortcut href="#projects">Projetos</Shortcut>
                 <Shortcut href="#contact">Contato</Shortcut>

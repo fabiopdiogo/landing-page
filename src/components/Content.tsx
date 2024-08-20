@@ -1,20 +1,18 @@
 import React from 'react';
-
-import styled from 'styled-components'
-
+import styled from 'styled-components';
 import Projects from './Sections/Projects';
 import About from './Sections/About';
-import Whatasapp from './Sections/Whatsapp'
+import Whatsapp from './Sections/Whatsapp';
 import Inicio from './Sections/Inicio';
-import Contato from './Sections/Contato'
+import Contato from './Sections/Contato';
 import Redes from './Sections/Redes';
+import Shortcut from './Elements/Shortcut';
 
 const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: black;  
   //padding: 0px 45px;
-  gap: 20px;    
   
   &:before, &:after{
     content: '';
@@ -23,27 +21,46 @@ const PostContainer = styled.div`
   p{
     font-size: 20px;
   }
+`;
 
-`
 const H1 = styled.h1`
   font-size:85px;  
-  color: orange;
 
   @media (max-width: 676px){
     font-size:45px;  
   }
-`
-function Content (){
+`;
 
-  return(
-    <PostContainer>           
-      <Inicio id="beginning" />
-      <About id="about"/>
-      <Projects id="projects" />     
-      <Whatasapp id="contact"/>     
-      <Redes id= "redes"/> 
-    </PostContainer>
-  )
+const Open = styled.img`
+  display: none;
+  
+  @media(max-width:1100px){
+    display:flex;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    padding: 20px;
+    cursor: pointer;
+  }
+`;
+
+interface Props {
+  setMenuIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default Content
+const Content: React.FC<Props> = ({ setMenuIsVisible }) => {
+  return (
+    <>
+      <Open src="menu.png" onClick={() => setMenuIsVisible(true)} />
+      <PostContainer>
+        <Inicio setMenuIsVisible={setMenuIsVisible} id="beginning" />
+        <Projects id="projects" />
+        <About id="about" />
+        <Whatsapp id="contact" />
+        <Redes id="redes" />
+      </PostContainer>
+    </>
+  );
+};
+
+export default Content;

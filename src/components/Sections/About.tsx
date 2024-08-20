@@ -5,7 +5,7 @@ const H1 = styled.h1`
   font-size: 85px;
   color: white;
   text-align: center;
-
+  font-family: "Old English Text MT";
   @media (max-width: 676px) {
     font-size: 45px;
   }
@@ -24,8 +24,7 @@ const DivMain = styled.section`
   background-repeat: no-repeat;
   background-attachment: fixed; /* Fixa o fundo na posição */
   
-  min-height: 100vh; /* Garante que o contêiner ocupe pelo menos a altura total da tela */
-  padding: 20px;
+  min-height: 100vh; /* Garante que o contêiner ocupe pelo menos a altura total da tela */ padding: 20px;
   justify-content: center;
   align-items: center;
 `;
@@ -51,7 +50,7 @@ const Content = styled.section`
 
 const P = styled.p`
   color: white;
-  font-size: 18px;
+  font-size: 28px;
   line-height: 1.5;
   text-align: justify;
   margin: 0;

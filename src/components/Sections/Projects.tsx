@@ -10,7 +10,13 @@ const DivMain = styled.main`
   justify-content: center;
   align-items: center;
   width: 100%; 
+  padding-bottom: 40px;
 
+  background-image: url('/fundo.jpg'); /* Adicione a imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fixa o fundo na posição */
 `; 
 
 const CardsFit = styled.div`
@@ -20,14 +26,14 @@ const CardsFit = styled.div`
 `;
 
 const H1 = styled.h1`
-  font-size: 85px;  
+  font-size:30px;  
   color: white;
-
+  font-family: "Old English Text MT";
   @media (max-width: 676px) {
     font-size: 45px;  
   }
   @media (max-width: 480px) {
-    font-size: 35px;  
+    font-size: 25px;  
   }
 `;
 
@@ -48,10 +54,31 @@ const StyledSlider = styled(Slider)`
   }
 `;
 
+const P = styled.h2`
+  color: white;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0;
+  font-size: 20px;
+`;
+
+
 const Image = styled.img`
   max-width: 100%;
   height: auto;
   object-fit: contain; /* Garante que a imagem mantenha sua proporção */
+  border: 5px solid black;
+  box-sizing: border-box;
+`;
+
+const Quote = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: start;
+
 `;
 
 interface Props {
@@ -79,8 +106,36 @@ function Skills({ id }: Props) {
   return (
     <a id={id}>
       <DivMain>
-        <H1>Alguns trabalhos</H1>          
+          <H1>Processo <b>Free Hand</b></H1>
+          <H1>Preto e Cinza</H1>
+          <H1>Cobertira <b>Detalhista</b></H1>
+          <H1>Pela <b>Negra</b></H1>          
         <CardsFit>
+          <StyledSlider {...settings}>
+            <div>
+              <Image src="glauber2.jpg" alt="Imagem 1" />
+            </div>
+            <div>
+              <Image src="glauber2.jpg" alt="Imagem 2" />
+            </div>
+            <div>
+              <Image src="glauber2.jpg" alt="Imagem 3" />
+            </div>
+            <div>
+              <Image src="glauber2.jpg" alt="Imagem 4" />
+            </div>
+          </StyledSlider>
+
+          <Quote>
+              <P>"O objetico da arte não é representar a 
+              aparência exterior das coisas,<b>mas seu significado interior</b>"</P>
+              <P><b>Aristóteles</b></P>
+              <H1>Fechamentos</H1>   
+              <P>"Os proessos de fechamentos são baseados em imagens exclusicas, planejadas
+                e sob medida para um resultado perfeito, além disso, meus trabalhos se destacam
+                por dua identidade única de profundidade e iluminação com impacto visual."</P>
+          </Quote>
+
           <StyledSlider {...settings}>
             <div>
               <Image src="glauber2.jpg" alt="Imagem 1" />

@@ -11,10 +11,14 @@ const A = styled.a`
   font-size:20px;
   &:link{
     text-decoration: none;
-  }
+  }  
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 `
 
-function Shortcut({children,href,setMenuIsVisible}){
+
+function Shortcut({ children, href, setMenuIsVisible }){
   var aux = 'x'
   aux.concat(href)
   return(

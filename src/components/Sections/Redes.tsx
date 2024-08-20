@@ -8,12 +8,20 @@ const PostContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 20px;
+  padding-bottom: 10px;
   gap: 20px;    
+  padding-bottom: 80px;
+
+  background-image: url('/fundo.jpg'); /* Adicione a imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fixa o fundo na posição */
 `
 const H1 = styled.h1`
-  font-size:85px;  
+  font-size:30px; 
   color: white;
-
+  font-family: "Old English Text MT";
   @media (max-width: 676px){
     font-size:45px;  
   }

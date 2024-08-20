@@ -10,17 +10,16 @@ import Menu from './components/Menu/Menu';
 const Box = styled.div`
   display: flex;  
   flex-direction: column;    
-  background-color: black;
   height: 100vh;
 `
+
 
 function App() { 
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (   
     <Box>
         <Menu menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
-        <Column setMenuIsVisible={setMenuIsVisible}/>
-        <Content/>              
+        <Content setMenuIsVisible={setMenuIsVisible}/>              
     </Box>
   );
 }

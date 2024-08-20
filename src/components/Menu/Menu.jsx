@@ -19,7 +19,7 @@ const Container= styled.section`
   justify-content: center;
 
   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,18,19,1) 0%, rgba(255,165,0,1) 100%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,18,19,1) 0%, #ff0800 100%, rgba(0,212,255,1) 100%);
 
   opacity: 0;
   pointer-events: none;
@@ -57,19 +57,6 @@ const Close = styled.img`
   padding: 20px;
   cursor: pointer;
 `
-const A = styled.a`
-  display: flex;
-  align-items: center;  
-  justify-content: center;
-  border-block: solid;
-  writing-mode: horizontal-tb;
-  border-color: orange;   
-  width: 100%;  
-  color: #ececec;  
-  &:link{
-    text-decoration: none;
-  }
-`
 
 const Nav= styled.nav`
 
@@ -78,11 +65,11 @@ const Nav= styled.nav`
 function Menu({menuIsVisible,setMenuIsVisible} ){
   return(
     <Container isVisible={menuIsVisible}>
-      <Close src="icons8-close-window-50.png" onClick={() => setMenuIsVisible(false)}/>
+      <Close src="close.png" onClick={() => setMenuIsVisible(false)}/>
       <Nav>
       <DivMain>
         <ButtonsDiv>          
-              <A href="#beginning" onClick={() => setMenuIsVisible(false)}>Inicio</A>
+              <Shortcut href="#beginning" onClick={() => setMenuIsVisible(false)}>Inicio</Shortcut>
               <Shortcut href="#about" setMenuIsVisible={setMenuIsVisible}>Sobre Mim</Shortcut>
               <Shortcut href="#projects" setMenuIsVisible={setMenuIsVisible}>Trabalhos</Shortcut>           
               <Shortcut href="#contact"setMenuIsVisible={setMenuIsVisible}>Contato</Shortcut>

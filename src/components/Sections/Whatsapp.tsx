@@ -55,7 +55,7 @@ const Image = styled.img`
 
 const Text = styled.span`
   font-size: 14px;
-
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   @media (max-width: 768px) {
     font-size: 12px;
   }
