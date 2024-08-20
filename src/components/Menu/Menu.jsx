@@ -36,7 +36,8 @@ const DivMain = styled.div`
   display: flex; 
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content:center;
+  gap: 20px;
   width: 100%;
   height: 100vh;
   background-position: right;
@@ -58,24 +59,40 @@ const Close = styled.img`
   cursor: pointer;
 `
 
-const Nav= styled.nav`
+const Button = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none; 
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+`
+const Img = styled.img`
+    width: 140px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 140px;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
 
+    @media (max-width: 768px) {
+      width: 30px;
+      height: 30px;
+    }
 `
 
 function Menu({menuIsVisible,setMenuIsVisible} ){
   return(
     <Container isVisible={menuIsVisible}>
       <Close src="close.png" onClick={() => setMenuIsVisible(false)}/>
-      <Nav>
       <DivMain>
         <ButtonsDiv>          
               <Shortcut href="#beginning" onClick={() => setMenuIsVisible(false)}>Inicio</Shortcut>
               <Shortcut href="#about" setMenuIsVisible={setMenuIsVisible}>Sobre Mim</Shortcut>
               <Shortcut href="#projects" setMenuIsVisible={setMenuIsVisible}>Trabalhos</Shortcut>           
-              <Shortcut href="#contact"setMenuIsVisible={setMenuIsVisible}>Contato</Shortcut>
+              <Shortcut href="#redes"setMenuIsVisible={setMenuIsVisible}>Redes</Shortcut>
         </ButtonsDiv>
+        <Button href="https://www.instagram.com/glauberhenrique_arts/">
+              <Img src="instagram.png"></Img>         
+        </Button> 
       </DivMain>
-      </Nav>
     </Container>
   )
 }

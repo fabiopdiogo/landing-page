@@ -12,9 +12,7 @@ const A = styled.a`
   &:link{
     text-decoration: none;
   }  
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
 `
 
 

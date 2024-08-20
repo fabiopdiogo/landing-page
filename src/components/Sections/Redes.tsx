@@ -5,11 +5,10 @@ import styled from 'styled-components'
 
 const PostContainer = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
-  padding-bottom: 10px;
-  gap: 20px;    
   padding-bottom: 80px;
 
   background-image: url('/fundo.jpg'); /* Adicione a imagem de fundo */
@@ -18,6 +17,21 @@ const PostContainer = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed; /* Fixa o fundo na posição */
 `
+
+const ContatoDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-right: 150px;
+  
+`
+const Div = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;    
+`
+
 const H1 = styled.h1`
   font-size:30px; 
   color: white;
@@ -47,6 +61,28 @@ const Img = styled.img`
       height: 30px;
     }
 `
+const LogoH1 = styled(H1)`
+  font-size: 40px;
+  margin: 0;
+  text-align: left; /* Alinha o logo à esquerda */
+  color: white;  
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+    padding: 25px;
+  }
+
+`;
+
+const P = styled.h2`
+  color: white;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0;
+  font-size: 20px;
+`;
+
+
 interface Props {
     id: string;
   }
@@ -54,12 +90,24 @@ interface Props {
 function Redes ({ id }: Props){
 
   return(
-    <PostContainer> 
-        <Button href="https://www.instagram.com/glauberhenrique_arts/">
-         <Img src="instagram.png"></Img>         
-         <H1>Me siga no Instagram</H1>
-        </Button> 
-    </PostContainer>
+    <a id={id}>
+      <PostContainer> 
+          <Button href="https://www.instagram.com/glauberhenrique_arts/">
+            <Img src="instagram.png"></Img>         
+            <H1>Me siga no Instagram</H1>
+          </Button> 
+          <LogoH1>Glauber Arts Tatoo</LogoH1>
+          <ContatoDiv>
+            <H1>Contato</H1>
+            <Div><Img src="whatsapp2.png" /><P>(31)99268-6329</P></Div>
+          </ContatoDiv>
+          <ContatoDiv>
+              <H1>Onde estamos</H1>
+              <Div><Img src="local.png"/><P>Sabará - MG</P></Div>
+          </ContatoDiv>
+      </PostContainer>
+      
+    </a>
   )
 }
 

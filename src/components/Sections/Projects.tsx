@@ -108,7 +108,7 @@ function Skills({ id }: Props) {
       <DivMain>
           <H1>Processo <b>Free Hand</b></H1>
           <H1>Preto e Cinza</H1>
-          <H1>Cobertira <b>Detalhista</b></H1>
+          <H1>Cobertura <b>Detalhista</b></H1>
           <H1>Pela <b>Negra</b></H1>          
         <CardsFit>
           <StyledSlider {...settings}>
@@ -127,13 +127,13 @@ function Skills({ id }: Props) {
           </StyledSlider>
 
           <Quote>
-              <P>"O objetico da arte não é representar a 
+              <P>"O objetivo da arte não é representar a 
               aparência exterior das coisas,<b>mas seu significado interior</b>"</P>
               <P><b>Aristóteles</b></P>
               <H1>Fechamentos</H1>   
               <P>"Os proessos de fechamentos são baseados em imagens exclusicas, planejadas
                 e sob medida para um resultado perfeito, além disso, meus trabalhos se destacam
-                por dua identidade única de profundidade e iluminação com impacto visual."</P>
+                por sua identidade única de profundidade e iluminação com impacto visual."</P>
           </Quote>
 
           <StyledSlider {...settings}>
