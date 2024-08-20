@@ -38,7 +38,8 @@ const H1 = styled.h1`
   font-size: 80px;
   color: white;
   text-align: center;
-  font-family: "Old English Text MT";
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 900;
 
   @media (max-width: 1024px) {
     font-size: 65px;
