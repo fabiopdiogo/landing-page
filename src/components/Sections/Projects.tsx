@@ -28,7 +28,7 @@ const CardsFit = styled.div`
 const H1 = styled.h1`
   font-size:30px;  
   color: white;
-  font-family: "Old English Text MT";
+  font-family: "Bebas Neue", sans-serif;
   @media (max-width: 676px) {
     font-size: 45px;  
   }
@@ -58,8 +58,8 @@ const P = styled.h2`
   color: white;
   line-height: 1.5;
   text-align: justify;
-  font-family: "New Amsterdam", system-ui;
-  font-weight: 100;
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
   font-style: normal;
   margin: 0;
   font-size: 20px;

@@ -35,7 +35,7 @@ const Div = styled.div`
 const H1 = styled.h1`
   font-size:30px; 
   color: white;
-  font-family: "Old English Text MT";
+  font-family: "Bebas Neue", sans-serif;
   @media (max-width: 676px){
     font-size:45px;  
   }
@@ -97,16 +97,14 @@ function Redes ({ id }: Props){
       <PostContainer> 
           <Button href="https://www.instagram.com/glauberhenrique_arts/">
             <Img src="instagram.png"></Img>         
-            <P>Me siga no Instagram</P>
+            <H1>Me siga no Instagram</H1>
           </Button> 
           <LogoH1>Glauber Arts Tatoo</LogoH1>
           <ContatoDiv>
             <H1>Contato</H1>
             <Div><Img src="whatsapp2.png" /><P>(31)99268-6329</P></Div>
-          </ContatoDiv>
-          <ContatoDiv>
-              <H1>Onde estamos</H1>
-              <Div><Img src="local.png"/><P>Sabará - MG</P></Div>
+            <H1>Onde estamos</H1>
+            <Div><Img src="local.png"/><P>Sabará - MG</P></Div>
           </ContatoDiv>
       </PostContainer>
       

@@ -37,8 +37,9 @@ const DivMain = styled.section`
 const H1 = styled.h1`
   font-size: 80px;
   color: white;
-  text-align: center;
-  font-family: "Old English Text MT";
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 
   @media (max-width: 1024px) {
     font-size: 65px;
@@ -74,9 +75,9 @@ const DivMenu = styled.nav`
 const LogoH1 = styled(H1)`
   font-size: 40px;
   margin: 0;
-  text-align: left; /* Alinha o logo à esquerda */
-  color: white;
-  font-family: "Old English Text MT";
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   @media (max-width: 1024px) {
     font-size: 30px;
   }
