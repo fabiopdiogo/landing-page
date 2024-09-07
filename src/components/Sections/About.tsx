@@ -18,7 +18,7 @@ const H1 = styled.h1`
 const DivMain = styled.section`
   display: flex;
   flex-direction: column;
-  background-image: url('/glauber3.jpg'); /* Adicione a imagem de fundo */
+  background-image: url('/glauber2.jpeg'); /* Adicione a imagem de fundo */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,6 +50,9 @@ const Content = styled.section`
 
 const P = styled.p`
   color: white;
+  font-family: "New Amsterdam", system-ui;
+  font-weight: 100;
+  font-style: normal;
   font-size: 28px;
   line-height: 1.5;
   text-align: justify;
@@ -73,11 +76,17 @@ function About({ id }: Props) {
   return (
     <a id={id}>
       <DivMain>
-        <H1>Sobre mim</H1>
+        <H1>Olá, eu sou Glauber Henrique!</H1>
         <Content>
           <P>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </P>
+          Sou de Sabará,Minas Gerais.
+Com 33 anos e 4 anos de experiência como tatuador, sempre fui apaixonado por arte.<br/> Desde pequeno, estive inserido em um universo criativo que envolve música, graffiti e skate. Essa conexão com a arte moldou meu estilo e minha abordagem na tatuagem.<br/>
+
+Hoje, me especializo em realismo e custom lettering, buscando sempre aprimorar minhas habilidades por meio de workshops e mentorias com os melhores profissionais do mercado. Acredito que a evolução constante é fundamental para oferecer o melhor aos meus clientes.<br/>
+
+Além disso, estou explorando novas formas de expressão artística através da pintura em telas, sempre levando essa paixão para cada tatuagem que crio. Meu objetivo é não apenas atender às expectativas dos meus clientes, mas superá-las, buscando reconhecimento no mercado pela qualidade e originalidade do meu trabalho.<br/>
+
+Se você está em busca de uma tatuagem única e feita com carinho, estou aqui para transformar suas ideias em arte!          </P>
         </Content>
       </DivMain>
     </a>

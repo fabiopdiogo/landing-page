@@ -78,6 +78,9 @@ const P = styled.h2`
   color: white;
   line-height: 1.5;
   text-align: justify;
+  font-family: "New Amsterdam", system-ui;
+  font-weight: 100;
+  font-style: normal;
   margin: 0;
   font-size: 20px;
 `;
@@ -94,7 +97,7 @@ function Redes ({ id }: Props){
       <PostContainer> 
           <Button href="https://www.instagram.com/glauberhenrique_arts/">
             <Img src="instagram.png"></Img>         
-            <H1>Me siga no Instagram</H1>
+            <P>Me siga no Instagram</P>
           </Button> 
           <LogoH1>Glauber Arts Tatoo</LogoH1>
           <ContatoDiv>

@@ -58,6 +58,9 @@ const P = styled.h2`
   color: white;
   line-height: 1.5;
   text-align: justify;
+  font-family: "New Amsterdam", system-ui;
+  font-weight: 100;
+  font-style: normal;
   margin: 0;
   font-size: 20px;
 `;
@@ -113,23 +116,19 @@ function Skills({ id }: Props) {
         <CardsFit>
           <StyledSlider {...settings}>
             <div>
-              <Image src="glauber2.jpg" alt="Imagem 1" />
+              <Image src="t1.jpeg" alt="Imagem 1" />
             </div>
             <div>
-              <Image src="glauber2.jpg" alt="Imagem 2" />
+              <Image src="t2.jpeg" alt="Imagem 2" />
             </div>
             <div>
-              <Image src="glauber2.jpg" alt="Imagem 3" />
-            </div>
-            <div>
-              <Image src="glauber2.jpg" alt="Imagem 4" />
+              <Image src="t3.jpeg" alt="Imagem 3" />
             </div>
           </StyledSlider>
 
           <Quote>
-              <P>"O objetivo da arte não é representar a 
-              aparência exterior das coisas,<b>mas seu significado interior</b>"</P>
-              <P><b>Aristóteles</b></P>
+              <P>"Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens."</P>
+              <P><b>Colossenses 3-23</b></P>
               <H1>Fechamentos</H1>   
               <P>"Os proessos de fechamentos são baseados em imagens exclusicas, planejadas
                 e sob medida para um resultado perfeito, além disso, meus trabalhos se destacam
@@ -138,17 +137,14 @@ function Skills({ id }: Props) {
 
           <StyledSlider {...settings}>
             <div>
-              <Image src="glauber2.jpg" alt="Imagem 1" />
+              <Image src="f1.jpeg" alt="Imagem 1" />
             </div>
             <div>
-              <Image src="glauber2.jpg" alt="Imagem 2" />
+              <Image src="f2.jpeg" alt="Imagem 2" />
             </div>
             <div>
-              <Image src="glauber2.jpg" alt="Imagem 3" />
-            </div>
-            <div>
-              <Image src="glauber2.jpg" alt="Imagem 4" />
-            </div>
+              <Image src="f3.jpeg" alt="Imagem 3" />            </div>
+
           </StyledSlider>
         </CardsFit>
       </DivMain> 

@@ -5,8 +5,8 @@ import Shortcut from '../Elements/Shortcut';
 const DivMain = styled.section`
   display: flex;
   flex-direction: column;
-  background-image: url('/glauber2.jpg');
-  background-size: cover;
+  background-image: url('/glauber1.jpeg');
+  //background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
