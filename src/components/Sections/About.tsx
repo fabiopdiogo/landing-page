@@ -19,24 +19,26 @@ const DivMain = styled.section`
   display: flex;
   flex-direction: column;
   background-image: url('/glauber2.jpeg'); /* Adicione a imagem de fundo */
-  background-size: 80%;
+  background-size: cover; /* Garante que a imagem cubra toda a área de fundo */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Fixa o fundo na posição */
   background-position-y: -250px;
   
-  min-height: 100vh; /* Garante que o contêiner ocupe pelo menos a altura total da tela */ padding: 20px;
+  min-height: 100vh; /* Garante que o contêiner ocupe pelo menos a altura total da tela */ 
+  padding: 20px;
   justify-content: center;
   align-items: center;
 
   @media (max-width: 646px) {
-    background-size: 100%;
+    background-size: cover; /* Mantém a imagem cobrindo toda a área de fundo */
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Fixa o fundo na posição */
-    min-height: 100vh; 
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 `;
+
 
 const Content = styled.section`
   display: flex;
