@@ -16,27 +16,82 @@ const PostContainer = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Fixa o fundo na posição */
+
+
 `
 
 const ContatoDiv = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: start;
-  margin-right: 150px;
-  
-`
-const Div = styled.div`
+  align-items: start;
+  margin-right: 50px;
+  gap: 200px;
+
+  @media (max-width: 759px) {
+    flex-direction: column; /* Muda para coluna em telas menores */
+    align-items: center;
+    justify-content: start;
+    gap: 20px; /* Reduz o espaçamento entre os itens */
+    margin-right: 0; /* Remove a margem para centralizar melhor */
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+`;
+
+const Div1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 5px;    
+
+  @media (max-width: 759px) {
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens para telas menores */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  @media (max-width: 413px) {
+    flex-direction: column;
+    align-items: start; /* Centraliza os itens para telas menores */
+    text-align: start; /* Centraliza o texto */
+  }
+`;
+
+const Div2 = styled.div`
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 5px;    
-`
+  gap: 5px;
+
+  @media (max-width: 759px) {
+    justify-content: center; /* Centraliza os itens na tela */
+  }
+`;
+
+const Div3 = styled.div`
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 155px;
+
+    @media (max-width: 759px) {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      gap: 5px;
+  }
+`;
 
 const H1 = styled.h1`
   font-size:30px; 
   color: white;
   font-family: "Bebas Neue", sans-serif;
-  @media (max-width: 676px){
+  @media (max-width: 759px){
     font-size:45px;  
   }
   @media (max-width: 480px){
@@ -52,8 +107,8 @@ const Button = styled.a`
   font-size: 14px;
 `
 const Img = styled.img`
-    width: 140px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 140px;
+   width: 30px;
+   height: 30px;
     margin-right: 10px; /* Espaço entre a imagem e o texto */
 
     @media (max-width: 768px) {
@@ -94,17 +149,26 @@ function Redes ({ id }: Props){
 
   return(
     <a id={id}>
-      <PostContainer> 
-          <Button href="https://www.instagram.com/glauberhenrique_arts/">
-            <Img src="instagram.png"></Img>         
-            <H1>Me siga no Instagram</H1>
-          </Button> 
-          <LogoH1><Button href="https://www.instagram.com/glauberhenrique_arts/"> <H1>@glauberhenrique_arts</H1></Button></LogoH1>
+      <PostContainer>           
           <ContatoDiv>
-            <H1>Contato</H1>
-            <Div><Img src="whatsapp2.png" /><P>(31)99268-6329</P></Div>
-            <H1>Onde estamos</H1>
-            <Div><Img src="local.png"/><P>Sabará - MG</P></Div>
+            <Div1>
+              <Button href="https://www.instagram.com/glauberhenrique_arts/">
+                <Img src="instagram.png"></Img>         
+                <H1>Me siga no Instagram</H1>
+              </Button> 
+              <LogoH1><Button href="https://www.instagram.com/glauberhenrique_arts/"> <H1>@glauberhenrique_arts</H1></Button></LogoH1>
+            </Div1>
+            <Div3>
+              <Div1>
+                <H1>Contato</H1>
+                <Div2><Img src="whatsapp2.png" /><P>(31)99268-6329</P></Div2>
+              </Div1>            
+              <Div1>
+                <H1>Onde estamos</H1>
+                <Div2><Img src="local.png"/><P>Sabará - MG</P></Div2>
+              </Div1>
+            </Div3>
+            
           </ContatoDiv>
       </PostContainer>
       

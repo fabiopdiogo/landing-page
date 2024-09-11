@@ -72,7 +72,7 @@ const StyledSlider = styled(Slider)`
   }
 `;
 
-const P = styled.h2`
+const P = styled.p`
   color: white;
   line-height: 1.5;
   text-align: justify;
@@ -80,14 +80,15 @@ const P = styled.h2`
   font-weight: 300;
   font-style: normal;
   margin: 0;
-  font-size: 20px;
+  font-size: 28px;
 
   @media (max-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @media (max-width: 480px) {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.4;
   }
 `;
 

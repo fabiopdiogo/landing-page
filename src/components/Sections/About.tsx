@@ -34,6 +34,7 @@ const DivMain = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Fixa o fundo na posição */
+    min-height: 100vh; 
   }
 `;
 
