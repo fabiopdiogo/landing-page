@@ -18,9 +18,12 @@ const Container= styled.section`
   align-items: center;
   justify-content: center;
 
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,18,19,1) 0%, #ff0800 100%, rgba(0,212,255,1) 100%);
-
+  //background: rgb(2,0,36);
+  //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,18,19,1) 0%, #ff0800 100%, rgba(0,212,255,1) 100%);
+  background-image: url('/mao.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   opacity: 0;
   pointer-events: none;
   transition: .1s;

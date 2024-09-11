@@ -6,7 +6,7 @@ const DivMain = styled.section`
   display: flex;
   flex-direction: column;
   background-image: url('/glauber1.jpeg');
-  //background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -35,14 +35,14 @@ const DivMain = styled.section`
 `;
 
 const H1 = styled.h1`
-  font-size: 80px;
+  font-size: 150px;
   color: white;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 600;
   font-style: normal;
 
   @media (max-width: 1024px) {
-    font-size: 65px;
+    font-size: 105px;
   }
 
   @media (max-width: 768px) {
@@ -52,6 +52,7 @@ const H1 = styled.h1`
   @media (max-width: 480px) {
     font-size: 40px;
   }
+    
 `;
 
 const DivMenu = styled.nav`
@@ -78,8 +79,9 @@ const LogoH1 = styled(H1)`
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+
   @media (max-width: 1024px) {
-    font-size: 30px;
+    font-size: 80px;
   }
 
   @media (max-width: 768px) {
@@ -108,7 +110,7 @@ const Inicio: React.FC<Props> = ({ id, setMenuIsVisible }) => {
     <>
       <a id={id}>
         <DivMenu>
-          <LogoH1>Glauber Arts Tatoo</LogoH1>
+          <LogoH1>Glauber Art's Tatoo</LogoH1>
           <ButtonsDiv>
             <Shortcut setMenuIsVisible={setMenuIsVisible} href="#beginning">Inicio</Shortcut>
             <Shortcut setMenuIsVisible={setMenuIsVisible} href="#about">Sobre</Shortcut>
@@ -117,7 +119,7 @@ const Inicio: React.FC<Props> = ({ id, setMenuIsVisible }) => {
           </ButtonsDiv>
         </DivMenu>
         <DivMain>
-          <H1>Glauber Arts Tatoo</H1>
+          <H1>Glauber Art's Tatoo</H1>
         </DivMain>
       </a>
     </>

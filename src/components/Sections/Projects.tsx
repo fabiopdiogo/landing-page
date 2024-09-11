@@ -20,18 +20,36 @@ const DivMain = styled.main`
 `; 
 
 const CardsFit = styled.div`
-  width: 80%; /* Define a largura do contêiner do carrossel */
-  //max-width: 1200px; /* Define um máximo para a largura */
+  width: 30%; /* Define a largura do contêiner do carrossel */
   margin: 0 auto; /* Centraliza o contêiner */
+  align-items: center;
+
+  @media (max-width: 1200px) {
+    width: 50%; /* Ajusta a largura para telas médias */
+  }
+
+  @media (max-width: 900px) {
+    width: 80%; /* Reduz a largura em telas menores */
+  }
+
+  @media (max-width: 600px) {
+    width: 80%; /* Para telas muito pequenas, ocupa 100% da largura */
+  }
 `;
 
 const H1 = styled.h1`
-  font-size:30px;  
+  font-size: 0px;
   color: white;
   font-family: "Bebas Neue", sans-serif;
+
+  @media (min-width: 1200px) {
+    font-size: 60px;
+  }
+
   @media (max-width: 676px) {
     font-size: 45px;  
   }
+
   @media (max-width: 480px) {
     font-size: 25px;  
   }
@@ -63,8 +81,15 @@ const P = styled.h2`
   font-style: normal;
   margin: 0;
   font-size: 20px;
-`;
 
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+`;
 
 const Image = styled.img`
   max-width: 100%;
@@ -77,11 +102,19 @@ const Image = styled.img`
 const Quote = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   align-items: center;
   justify-content: start;
 
+  @media (max-width: 768px) {
+    padding: 60px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px;
+  }
 `;
 
 interface Props {
@@ -109,32 +142,33 @@ function Skills({ id }: Props) {
   return (
     <a id={id}>
       <DivMain>
-          <H1>Processo <b>Free Hand</b></H1>
-          <H1>Preto e Cinza</H1>
-          <H1>Cobertura <b>Detalhista</b></H1>
-          <H1>Pela <b>Negra</b></H1>          
+          <H1>Trabalhos</H1>
+              
         <CardsFit>
           <StyledSlider {...settings}>
             <div>
-              <Image src="t1.jpeg" alt="Imagem 1" />
+              <Image src="t2.jpeg" alt="Imagem 2" />              
             </div>
             <div>
-              <Image src="t2.jpeg" alt="Imagem 2" />
+              <Image src="t1.jpeg" alt="Imagem 1" />
             </div>
             <div>
               <Image src="t3.jpeg" alt="Imagem 3" />
             </div>
           </StyledSlider>
+        </CardsFit>
 
-          <Quote>
-              <P>"Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens."</P>
-              <P><b>Colossenses 3-23</b></P>
-              <H1>Fechamentos</H1>   
-              <P>"Os proessos de fechamentos são baseados em imagens exclusicas, planejadas
-                e sob medida para um resultado perfeito, além disso, meus trabalhos se destacam
-                por sua identidade única de profundidade e iluminação com impacto visual."</P>
-          </Quote>
+        <Quote>
+            <P>"Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens."</P>
+            <P><b>Colossenses 3-23</b></P>
+            <br/>
+            <H1>Fechamentos</H1>   
+            <P>"Os processos de fechamentos são baseados em imagens exclusivas, planejadas
+              dentro da anatomia do seu corpo para um resultado perfeito, além disso, meus trabalhos se destacam
+              por sua identidade única de profundidade e iluminação com impacto visual."</P>
+        </Quote>
 
+        <CardsFit>
           <StyledSlider {...settings}>
             <div>
               <Image src="f1.jpeg" alt="Imagem 1" />
@@ -143,8 +177,8 @@ function Skills({ id }: Props) {
               <Image src="f2.jpeg" alt="Imagem 2" />
             </div>
             <div>
-              <Image src="f3.jpeg" alt="Imagem 3" />            </div>
-
+              <Image src="f3.jpeg" alt="Imagem 3" /> 
+            </div>
           </StyledSlider>
         </CardsFit>
       </DivMain> 

@@ -14,7 +14,6 @@ const Box = styled.div`
   width:100%;
 `
 
-
 function App() { 
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (   

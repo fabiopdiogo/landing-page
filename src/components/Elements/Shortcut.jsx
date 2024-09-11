@@ -6,6 +6,7 @@ const A = styled.a`
   display: flex;
   align-items: center;  
   justify-content: center;   
+  font-family: "Dosis", sans-serif;
   width: 100%;  
   color: #ececec;
   font-size:20px;
