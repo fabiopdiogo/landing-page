@@ -31,7 +31,7 @@ const DivMain = styled.section`
   align-items: center;
 
   @media (max-width: 646px) {
-    background-size: cover; /* Mantém a imagem cobrindo toda a área de fundo */
+    background-size: contain contain; /* Mantém a imagem cobrindo toda a área de fundo */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
