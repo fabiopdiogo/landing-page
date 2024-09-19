@@ -18,7 +18,7 @@ const H1 = styled.h1`
 const DivMain = styled.section`
   display: flex;
   flex-direction: column;
-  background-image: url('/glauber2.jpeg'); /* Adicione a imagem de fundo */
+  background-image: url('/glauber3.jpeg'); /* Adicione a imagem de fundo */
   background-size: cover; /* Garante que a imagem cubra toda a área de fundo */
   background-position: center;
   background-repeat: no-repeat;
