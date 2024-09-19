@@ -18,7 +18,7 @@ const H1 = styled.h1`
 const DivMain = styled.section`
   display: flex;
   flex-direction: column;
-  background-image: url('/glauber3.jpeg'); /* Adicione a imagem de fundo */
+  background-image: url('/glauber2.jpeg'); /* Adicione a imagem de fundo */
   background-size: cover; /* Garante que a imagem cubra toda a área de fundo */
   background-position: center;
   background-repeat: no-repeat;
@@ -31,10 +31,11 @@ const DivMain = styled.section`
   align-items: center;
 
   @media (max-width: 646px) {
-    background-size: contain contain; /* Mantém a imagem cobrindo toda a área de fundo */
-    background-position: center;
+    background-size: auto 100%; /* Mantém a altura total sem distorcer a largura */
+    background-position: center center; /* Centraliza a imagem completamente */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Para evitar problemas de rolagem */
+    background-position-y: 0; /* Remove o offset vertical */
     min-height: 100vh;
   }
 `;
