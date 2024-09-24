@@ -54,7 +54,7 @@ const Content: React.FC<Props> = ({ setMenuIsVisible }) => {
     <>
       <Open src="menu.png" onClick={() => setMenuIsVisible(true)} />
       <PostContainer>
-        <Inicio setMenuIsVisible={setMenuIsVisible} id="beginning" />
+        <Inicio setMenuIsVisible={setMenuIsVisible} id="inicio" />
         <About id="about" />
         <Projects id="projects" />        
         <Whatsapp id="contact" />

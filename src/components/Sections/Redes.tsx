@@ -70,6 +70,13 @@ const Div2 = styled.div`
   }
 `;
 
+const Div4 = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+`;
+
 const Div3 = styled.div`
 
     display: flex;
@@ -151,13 +158,13 @@ function Redes ({ id }: Props){
     <a id={id}>
       <PostContainer>           
           <ContatoDiv>
-            <Div1>
+            <Div4>
               <Button href="https://www.instagram.com/glauberhenrique_arts/">
                 <Img src="instagram.png"></Img>         
                 <H1>Me siga no Instagram</H1>
               </Button> 
               <LogoH1><Button href="https://www.instagram.com/glauberhenrique_arts/"> <H1>@glauberhenrique_arts</H1></Button></LogoH1>
-            </Div1>
+            </Div4>
             <Div3>
               <Div1>
                 <H1>Contato</H1>
@@ -166,6 +173,7 @@ function Redes ({ id }: Props){
               <Div1>
                 <H1>Onde estamos</H1>
                 <Div2><Img src="local.png"/><P>Sabará - MG</P></Div2>
+                <Div2><Img src="local.png"/><P>Belo Horizonte - MG</P></Div2>
               </Div1>
             </Div3>
             

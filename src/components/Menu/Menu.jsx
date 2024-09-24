@@ -87,10 +87,10 @@ function Menu({menuIsVisible,setMenuIsVisible} ){
       <Close src="close.png" onClick={() => setMenuIsVisible(false)}/>
       <DivMain>
         <ButtonsDiv>          
-              <Shortcut href="#beginning" onClick={() => setMenuIsVisible(false)}>Inicio</Shortcut>
+              <Shortcut href="#inicio" onClick={() => setMenuIsVisible(false)}>Inicio</Shortcut>
               <Shortcut href="#about" setMenuIsVisible={setMenuIsVisible}>Sobre Mim</Shortcut>
               <Shortcut href="#projects" setMenuIsVisible={setMenuIsVisible}>Trabalhos</Shortcut>           
-              <Shortcut href="#redes"setMenuIsVisible={setMenuIsVisible}>Redes</Shortcut>
+              <Shortcut href="#redes" setMenuIsVisible={setMenuIsVisible}>Redes</Shortcut>
         </ButtonsDiv>
         <Button href="https://www.instagram.com/glauberhenrique_arts/">
               <Img src="instagram.png"></Img>         
@@ -100,4 +100,4 @@ function Menu({menuIsVisible,setMenuIsVisible} ){
   )
 }
 
-export default Menu
+export default Menu;

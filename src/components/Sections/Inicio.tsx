@@ -107,10 +107,9 @@ interface Props {
 
 const Inicio: React.FC<Props> = ({ id, setMenuIsVisible }) => {
   return (
-    <>
       <a id={id}>
         <DivMenu>
-          <LogoH1>Glauber Art's Tatoo</LogoH1>
+          <LogoH1>Glauber Art's Tattoo</LogoH1>
           <ButtonsDiv>
             <Shortcut setMenuIsVisible={setMenuIsVisible} href="#beginning">Inicio</Shortcut>
             <Shortcut setMenuIsVisible={setMenuIsVisible} href="#about">Sobre</Shortcut>
@@ -119,10 +118,9 @@ const Inicio: React.FC<Props> = ({ id, setMenuIsVisible }) => {
           </ButtonsDiv>
         </DivMenu>
         <DivMain>
-          <H1>Glauber Art's Tatoo</H1>
+          <H1>Glauber Art's Tattoo</H1>
         </DivMain>
       </a>
-    </>
   );
 }
 

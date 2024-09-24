@@ -72,7 +72,7 @@ const P = styled.p`
 
   @media (max-width: 480px) {
     font-size: 14px;
-    line-height: 1.4;
+    //line-height: 1.4;
   }
 `;
 

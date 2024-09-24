@@ -62,6 +62,16 @@ const StyledSlider = styled(Slider)`
     align-items: center; /* Centraliza verticalmente */
   }
 
+  .slick-dots {
+    display: flex; /* Flexbox para alinhar os dots em linha */
+    justify-content: center; /* Centraliza os dots */
+    flex-wrap: nowrap; /* Impede que os dots quebrem linha */
+  }
+
+  .slick-dots li {
+    margin: 0 5px; /* Espaçamento entre os dots */
+  }
+
   .slick-dots li button:before {
     font-size: 12px;
     color: white;
@@ -69,6 +79,48 @@ const StyledSlider = styled(Slider)`
 
   .slick-dots li.slick-active button:before {
     color: white;
+  }
+
+  @media (max-width: 676px) {
+    .slick-dots {
+      justify-content: space-around; /* Distribui os dots de forma mais espaçada em telas pequenas */
+    }
+
+    .slick-dots li {
+      margin: 0 3px; /* Reduz o espaçamento entre os dots em telas menores */
+    }
+
+    .slick-dots li button:before {
+      font-size: 10px; /* Reduz o tamanho dos dots em telas pequenas */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .slick-dots {
+      justify-content: space-between; /* Garante que os dots ocupem todo o espaço horizontal */
+    }
+
+    .slick-dots li {
+      margin: 0 2px; /* Ainda menor espaçamento para muito pequenas */
+    }
+
+    .slick-dots li button:before {
+      font-size: 8px; /* Tamanho menor dos dots para telas muito pequenas */
+    }
+  }
+
+  @media (max-width: 271px) {
+    .slick-dots {
+      justify-content: space-between; /* Garante que os dots ocupem todo o espaço horizontal */
+    }
+
+    .slick-dots li {
+      margin: 0 0px; /* Ainda menor espaçamento para muito pequenas */
+    }
+
+    .slick-dots li button:before {
+      font-size: 4px; /* Tamanho menor dos dots para telas muito pequenas */
+    }
   }
 `;
 
@@ -92,13 +144,19 @@ const P = styled.p`
   }
 `;
 
+
 const Image = styled.img`
-  max-width: 100%;
-  height: auto;
-  object-fit: contain; /* Garante que a imagem mantenha sua proporção */
+  width: 100%; /* Garante que todas as imagens tenham a mesma largura */
+  height: 100%; /* Garante que todas as imagens tenham a mesma altura */
+  object-fit: cover; /* Garante que a imagem ocupe todo o espaço, cortando se necessário */
   border: 5px solid black;
   box-sizing: border-box;
+
+  @media (max-width: 345px) {
+    max-height: 400px; /* Limita a altura máxima em telas pequenas */
+  }
 `;
+
 
 const Quote = styled.div`
   display: flex;
@@ -156,6 +214,18 @@ function Skills({ id }: Props) {
             <div>
               <Image src="t3.jpeg" alt="Imagem 3" />
             </div>
+            <div>
+              <Image src="t5.jpeg" alt="Imagem 3" />
+            </div>
+            <div>
+              <Image src="t6.jpeg" alt="Imagem 3" />
+            </div>
+            <div>
+              <Image src="t7.jpeg" alt="Imagem 3" />
+            </div>
+            <div>
+              <Image src="t8.jpeg" alt="Imagem 3" />
+            </div>
           </StyledSlider>
         </CardsFit>
 
@@ -179,6 +249,12 @@ function Skills({ id }: Props) {
             </div>
             <div>
               <Image src="f3.jpeg" alt="Imagem 3" /> 
+            </div>
+            <div>
+              <Image src="f4.jpeg" alt="Imagem 3" />
+            </div>
+            <div>
+              <Image src="f9.jpeg" alt="Imagem 3" />
             </div>
           </StyledSlider>
         </CardsFit>
