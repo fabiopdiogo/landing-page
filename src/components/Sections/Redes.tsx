@@ -163,7 +163,7 @@ function Redes ({ id }: Props){
                 <Img src="instagram.png"></Img>         
                 <H1>Me siga no Instagram</H1>
               </Button> 
-              <LogoH1><Button href="https://www.instagram.com/glauberhenrique_arts/"> <H1>@glauberhenrique_arts</H1></Button></LogoH1>
+              <LogoH1><Button href="https://www.instagram.com/glaubertattoo.ink/"> <H1>@glaubertattoo.ink</H1></Button></LogoH1>
             </Div4>
             <Div3>
               <Div1>
